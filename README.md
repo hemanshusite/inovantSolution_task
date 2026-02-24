@@ -43,6 +43,10 @@ First, clone the repository or download it as a `.zip` file. If you download it 
     ```bash
     composer update --ignore-platform-req=ext-gd
     ```
+- Also in **CMD** or **Terminal** do.
+  ```bash
+    composer dump-autoload
+  ```
 ## 4. Generate the Application Key
 
 Run the following command to generate a unique application key:
