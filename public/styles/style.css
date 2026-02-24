@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0efef;
+}
+
+.label-input-file {
+    position: relative;
+    width: 100%;
+}
+
+.label-input-file b {
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.label-input-file input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.bootbox-close-button {
+    display: none;
+}
+.file-upload-wrapper input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 8px;
+    background: #e5e5e5;
+    color: #1f2937;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.file-block {
+    display: inline-flex;
+    align-items: center;
+    background: #f1f5f9;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin-top: 8px;
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1f2937;
+    transition: 0.3s ease;
+}
+
+.file-block:hover {
+    background: #e2e8f0;
+}
+
+.file-block span:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+}
+
+.loader-overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgb(170 170 170 / 39%);
+    z-index: 99999;
+    top: 0;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin-top: calc(50vh - 30px);
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.file-delete {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.file-delete:hover {
+    color: darkred;
+    transform: scale(1.2);
+}
+.w-90 {
+    width: 90% !important;
+}

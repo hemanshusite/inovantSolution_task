@@ -1,0 +1,346 @@
+{
+  "info": {
+    "_postman_id": "35e59765-83fb-4116-9be5-2f216c43e6d9",
+    "name": "Task_api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "32733758"
+  },
+  "item": [
+    {
+      "name": "products",
+      "item": [
+        {
+          "name": "Product_list",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "password",
+                  "value": "password",
+                  "type": "string"
+                },
+                {
+                  "key": "username",
+                  "value": "admin",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8004/webservices/v1/products_list",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8004",
+              "path": [
+                "webservices",
+                "v1",
+                "products_list"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "cart api",
+      "item": [
+        {
+          "name": "add cart",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "user_id",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "acc39902-3688-4baa-b7e3-bfd2c28db912"
+                },
+                {
+                  "key": "product_id",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "e5b3f1e0-cba7-4f51-a841-f0eaf123208d"
+                },
+                {
+                  "key": "quantity",
+                  "value": "",
+                  "type": "text",
+                  "uuid": "1ee5c9c3-586a-45f0-bdc3-6d43dad1eb34",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8004/webservices/v1/add_cart",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8004",
+              "path": [
+                "webservices",
+                "v1",
+                "add_cart"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": null,
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete cart",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "user_id",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "acc39902-3688-4baa-b7e3-bfd2c28db912"
+                },
+                {
+                  "key": "product_id",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "e5b3f1e0-cba7-4f51-a841-f0eaf123208d"
+                },
+                {
+                  "key": "quantity",
+                  "value": "",
+                  "type": "text",
+                  "uuid": "1ee5c9c3-586a-45f0-bdc3-6d43dad1eb34",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8004/webservices/v1/add_cart",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8004",
+              "path": [
+                "webservices",
+                "v1",
+                "add_cart"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": null,
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "edit cart",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "user_id",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "acc39902-3688-4baa-b7e3-bfd2c28db912"
+                },
+                {
+                  "key": "cart_id",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "e5b3f1e0-cba7-4f51-a841-f0eaf123208d"
+                },
+                {
+                  "key": "quantity",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "1ee5c9c3-586a-45f0-bdc3-6d43dad1eb34"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8004/webservices/v1/edit_cart",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8004",
+              "path": [
+                "webservices",
+                "v1",
+                "edit_cart"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": null,
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "checkout",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {
+              "content-type": true
+            }
+          },
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "password",
+                  "value": "password",
+                  "type": "string"
+                },
+                {
+                  "key": "username",
+                  "value": "admin",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"user_id\": 1,\r\n    \"cart_ids\": [1,2,3,4]\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8004/webservices/v1/checkout",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8004",
+              "path": [
+                "webservices",
+                "v1",
+                "checkout"
+              ],
+              "query": [
+                {
+                  "key": "i",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "cart list",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "password",
+                  "value": "password",
+                  "type": "string"
+                },
+                {
+                  "key": "username",
+                  "value": "admin",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "user_id",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "acc39902-3688-4baa-b7e3-bfd2c28db912"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8004/webservices/v1/cart_list",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8004",
+              "path": [
+                "webservices",
+                "v1",
+                "cart_list"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": null,
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
