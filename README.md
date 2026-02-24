@@ -56,7 +56,7 @@ php artisan key:generate
 ```
 This will set the APP_KEY in the .env file, which is essential for securing user sessions and other encrypted data.
 
-## 5. Migrate the Database
+## 5. Migrate the Database or You can take Database from project folder and API collection
 Now, you need to set up the database:
 
 - If you have not already created the database, run:
